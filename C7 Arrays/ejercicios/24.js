@@ -5,6 +5,17 @@ function continueStatement(num) {
   // se continúa con la siguiente iteración.
   // PISTA: Utiliza el statement 'continue'.
   // Tu código:
+
+  let lista = []
+  let cantIte = 0
+  suma = num
+  while (suma != cantIte && cantIte < 10){
+    if (cantIte == 5) continue
+    suma += 2
+    lista.push(suma)
+    cantIte++
+  }
+  return lista
 }
 
 module.exports = continueStatement;
