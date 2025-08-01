@@ -5,8 +5,23 @@ function continueStatement(num) {
   // se continúa con la siguiente iteración.
   // PISTA: Utiliza el statement 'continue'.
   // Tu código:
-
   let lista = []
+  // num : 3
+
+  for (let i = 0; i < 10 ; i++){
+
+    if (i == 4) continue
+    num+=2
+    lista.push(num)
+  }
+  return lista
+  
+  continueStatement(10)
+
+
+
+  
+  /*let lista = []
   let cantIte = 0
   suma = num
   while (suma != cantIte && cantIte < 10){
@@ -15,7 +30,7 @@ function continueStatement(num) {
     lista.push(suma)
     cantIte++
   }
-  return lista
+  return lista*/
 }
 
 module.exports = continueStatement;

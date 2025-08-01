@@ -3,7 +3,7 @@ function tablaDelSeis() {
   // Desde 0 al 60.
   // Tu código:
   tabla = []
-  for (let index = 1; index < 11; index++) {
+  for (let index = 0; index < 11; index++) {
     tabla.push(6*index)
   }
   return tabla

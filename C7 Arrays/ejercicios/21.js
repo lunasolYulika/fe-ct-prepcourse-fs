@@ -4,13 +4,13 @@ function mesesDelAño(array) {
   // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
   // Tu código:
   let meses = []
-  if (array.includes("Enero"))  meses.push("Enero")
-  if (array.includes("Marzo"))  meses.push("Marzo")
-  if (array.includes("Noviembre"))  meses.push("Noviembre")
-
+  for (m of array){
+    if (m =="Enero") meses.push("Enero")
+    if (m =="Marzo")  meses.push("Marzo")
+    if (m =="Noviembre") meses.push("Noviembre")
+  }
   if (meses.length === 3)
     return meses
-  
   return "No se encontraron los meses pedidos"
 }
 
